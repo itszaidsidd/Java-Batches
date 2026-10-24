@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:spring-context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean class="com.springcore.collection.Emp" name="emp">
+    <property name="name">
+        <value>Zaid Siddiqui</value>
+    </property>
+    <property name="phone">
+        <list>
+            <value>8989898989</value>
+            <value>5489898934</value>
+            <value>5586898934</value>
+        </list>
+    </property>
+    <property name="address">
+        <set>
+            <value>Lucknow</value>
+            <value>Delhi</value>
+            <value>Muzaffarnagar</value>
+        </set>
+    </property>
+    <property name="courses">
+        <map>
+            <entry key="python" value="1.5 Months" />
+            <entry key="Java" value="2 Months" />
+            <entry key="C" value="1 Months" />
+        </map>
+    </property>
+ 
+ </bean>
+
+</beans>
